@@ -31,13 +31,18 @@ const Services = () => {
         <m.h2
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
           className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16"
         >
           Услуги и цены
         </m.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <m.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+        >
           {services.map((service, index) => (
             <m.div
               key={index}
@@ -60,7 +65,7 @@ const Services = () => {
               </div>
             </m.div>
           ))}
-        </div>
+        </m.div>
 
         <m.div
           whileInView={{ opacity: 1, y: 0 }}
