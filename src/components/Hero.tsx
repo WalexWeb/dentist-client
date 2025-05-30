@@ -32,7 +32,7 @@ const Hero = () => {
           >
             <a
               href="#услуги"
-              className="px-8 py-3 z-10 bg-sky-800 text-white font-medium rounded-full hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+              className="px-8 py-3 z-10 bg-sky-800 text-white font-medium rounded-full hover:bg-sky-700 transition-colors shadow-lg hover:shadow-xl"
             >
               Услуги
             </a>

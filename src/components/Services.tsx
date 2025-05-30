@@ -2,22 +2,28 @@ import { m } from "framer-motion";
 
 const services = [
   {
-    title: "Консультация и осмотр",
-    price: "1500 руб.",
+    title: "Профессиональная гигиена",
+    price: "от 5500 руб.",
     description:
-      "Комплексный осмотр полости рта, составление плана лечения, консультация по уходу за зубами.",
+      "Комплексная чистка зубов с удалением налета и камня ультразвуком и AirFlow, полировка и фторирование для укрепления эмали. Рекомендуется каждые 6 месяцев.",
   },
   {
     title: "Лечение кариеса",
-    price: "от 3500 руб.",
+    price: "от 5500 руб.",
     description:
-      "Безболезненное лечение кариеса с использованием современных пломбировочных материалов.",
+      "Безболезненное лечение с применением современных пломбировочных материалов (светоотверждаемые композиты). Сохранение естественной формы и цвета зуба.",
   },
   {
-    title: "Гингивит",
-    price: "от 6000 руб.",
+    title: "Эндодонтическое лечение",
+    price: "от 8000 руб.",
     description:
-      "Гигиеническая чистка зубов, лечение и профилактика кариеса и других заболеваний полости рта.",
+      "Лечение корневых каналов под микроскопом с гарантией качества. Используем современные инструменты и методы дезинфекции.",
+  },
+  {
+    title: "Отбеливание",
+    price: "от 15000 руб.",
+    description:
+      "Безопасное профессиональное отбеливание Zoom 4 с защитой эмали. Результат до 8 тонов светлее. Эффект сохраняется 1-2 года.",
   },
 ];
 
@@ -39,9 +45,9 @@ const Services = () => {
 
         <m.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-            whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 20 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
         >
           {services.map((service, index) => (
             <m.div
@@ -57,7 +63,7 @@ const Services = () => {
                   <h3 className="text-xl font-bold text-gray-900">
                     {service.title}
                   </h3>
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-blue-100 text-sky-700 px-3 py-1 rounded-full text-sm font-semibold">
                     {service.price}
                   </span>
                 </div>
