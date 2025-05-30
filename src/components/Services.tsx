@@ -71,7 +71,7 @@ const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-16 bg-blue-600 rounded-xl p-8 text-white text-center"
+          className="mt-16 bg-sky-800 rounded-xl p-8 text-white text-center"
         >
           <h3 className="text-2xl font-bold mb-4">
             Индивидуальный подход к каждому пациенту
@@ -82,7 +82,7 @@ const Services = () => {
           </p>
           <a
             href="#контакты"
-            className="inline-block px-8 py-3 bg-white text-blue-600 font-medium rounded-full hover:bg-blue-50 transition-colors"
+            className="inline-block px-8 py-3 bg-white text-sky-800 font-medium rounded-full hover:bg-blue-50 transition-colors"
           >
             Записаться на консультацию
           </a>

@@ -1,4 +1,5 @@
 import { m } from "framer-motion";
+import logo from '../../images/logo.png'
 
 const Header = () => {
   return (
@@ -9,10 +10,10 @@ const Header = () => {
           className="flex items-center space-x-2"
         >
           <img
-            // src={logo}
+            src={logo}
             className="h-12 w-12 object-contain"
           />
-          <span className="text-2xl font-bold text-blue-600">Znoeva</span>
+          <span className="text-2xl font-bold text-sky-800">Znoeva</span>
         </m.div>
 
         <nav className="md:flex space-x-8">
@@ -20,8 +21,8 @@ const Header = () => {
             <m.a
               key={index}
               href={`#${item.toLowerCase().replace(" ", "-")}`}
-              whileHover={{ scale: 1.1, color: "#2563eb" }}
-              className="font-medium text-gray-700 hover:text-blue-600 transition-colors"
+              whileHover={{ scale: 1.1 }}
+              className="font-medium text-gray-700 hover:text-sky-800 transition-colors"
             >
               {item}
             </m.a>
@@ -29,7 +30,7 @@ const Header = () => {
         </nav>
 
         <m.div whileHover={{ scale: 1.05 }} className="md:hidden">
-          <button className="text-gray-700 hover:text-blue-600">
+          <button className="text-gray-700 hover:text-sky-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"

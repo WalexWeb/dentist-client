@@ -47,7 +47,7 @@ const About = () => {
               className="grid grid-cols-1 md:grid-cols-2 gap-6"
             >
               <div className="bg-blue-50 p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-blue-600 mb-3">
+                <h3 className="text-xl font-semibold text-sky-800 mb-3">
                   Образование
                 </h3>
                 <ul className="space-y-2">
@@ -57,7 +57,7 @@ const About = () => {
               </div>
 
               <div className="bg-blue-50 p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-blue-600 mb-3">
+                <h3 className="text-xl font-semibold text-sky-800 mb-3">
                   Опыт работы
                 </h3>
                 <ul className="space-y-2">

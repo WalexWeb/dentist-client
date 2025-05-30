@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import logo from "../images/image.png";
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
             className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight"
           >
             Профессиональный{" "}
-            <span className="text-blue-600">стоматологический уход</span>
+            <span className="text-sky-800">стоматологический уход</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -31,24 +32,24 @@ const Hero = () => {
           >
             <a
               href="#услуги"
-              className="px-8 py-3 z-10 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+              className="px-8 py-3 z-10 bg-sky-800 text-white font-medium rounded-full hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
             >
               Услуги
             </a>
             <a
               href="#контакты"
-              className="px-8 py-3 border-2 border-blue-600 text-blue-600 font-medium rounded-full hover:bg-blue-50 transition-colors"
+              className="px-8 py-3 border-2 border-sky-800 text-sky-800 font-medium rounded-full hover:bg-blue-50 transition-colors"
             >
               Контакты
             </a>
           </motion.div>
         </div>
 
-        <div className="md:w-1/2 mt-12 md:mt-0">
+        <div className="md:w-1/2">
           <motion.img
-            src="/dentist.jpg"
+            src={logo}
             alt="Стоматолог Зноева Александра Юрьевна"
-            className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
+            className="max-w-2xl mx-auto"
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1 }}
