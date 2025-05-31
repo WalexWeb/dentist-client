@@ -1,5 +1,5 @@
 import { m } from "framer-motion";
-import logo from '../../images/logo.png'
+import logo from "../../images/logo.png";
 
 const Header = () => {
   return (
@@ -9,10 +9,7 @@ const Header = () => {
           whileHover={{ scale: 1.05 }}
           className="flex items-center space-x-2"
         >
-          <img
-            src={logo}
-            className="h-12 w-12 object-contain"
-          />
+          <img src={logo} className="h-12 w-12 object-contain" />
           <span className="text-2xl font-bold text-sky-800">Znoeva</span>
         </m.div>
 
@@ -28,25 +25,6 @@ const Header = () => {
             </m.a>
           ))}
         </nav>
-
-        <m.div whileHover={{ scale: 1.05 }} className="md:hidden">
-          <button className="text-gray-700 hover:text-sky-800">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        </m.div>
       </div>
     </header>
   );
