@@ -45,11 +45,11 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 mb-10 md:mb-0 order-1 md:order-2">
           <motion.img
             src={logo}
             alt="Стоматолог Зноева Александра Юрьевна"
-            className="max-w-2xl mx-auto"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto sm:mt-8"
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1 }}
